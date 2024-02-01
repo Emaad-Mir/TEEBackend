@@ -161,9 +161,9 @@ public class FibonacciApiController {
         result.put("message", game.getResultMessage());
         result.put("newScore", game.getPoints());
         result.put("selectedAlgorithm", selectedAlgorithm);
-        result.put("fastestAlgorithm", fastestAlgorithm);
     
         Map<String, String> fibonacciFacts = getFibonacciFacts();
+        result.put("fastestAlgorithm", fastestAlgorithm);
         result.put("funFact", fibonacciFacts.get(fastestAlgorithm));
     
         return result;
